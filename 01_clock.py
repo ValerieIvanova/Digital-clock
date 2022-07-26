@@ -13,7 +13,6 @@ def time():
     label.after(1000, time)
 
 
-# Problem with the background color
 label = Label(root, font='ds-digital 80', background='black', foreground='pink')
 label.pack(anchor='center')
 time()
