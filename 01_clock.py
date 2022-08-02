@@ -1,10 +1,10 @@
-from tkinter import *
-from tkinter.ttk import *
+from tkinter import Label, Tk
 from time import strftime
 
-root = Tk()
-root.title('Clock')
-root.geometry('300x90')
+window = Tk()
+window.title('Digital Clock')
+window.geometry('300x90')
+window.configure(background='black')
 
 
 def time():
@@ -13,8 +13,8 @@ def time():
     label.after(1000, time)
 
 
-label = Label(root, font='ds-digital 80', background='black', foreground='pink')
+label = Label(window, font='ds-digital 80', background="black", foreground='light green')
 label.pack(anchor='center')
-time()
 
-mainloop()
+time()
+window.mainloop()
